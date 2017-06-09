@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile project(':ble-gateway')
+
+  compile 'org.slf4j:slf4j-api:1.7.21'
+  compile 'com.google.guava:guava:20.0'
+  compile 'org.reflections:reflections:0.9.10'
+
+  testCompile 'junit:junit:4.12'
+}
