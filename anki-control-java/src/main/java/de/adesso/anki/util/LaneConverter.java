@@ -15,7 +15,7 @@ public class LaneConverter {
     if (offset == 0)
       return -1;
 
-    int lane = (int) Math.round(offset + ((offset > 0) ? 4.5 : -4.5) / 9);
+    int lane = (int) Math.round((offset + ((offset > 0) ? 4.5 : -4.5)) / 9);
 
     if (lane < -8)
       return -8;
